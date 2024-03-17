@@ -1,0 +1,196 @@
+body { 
+    font-size: 18px;
+    background-image: url(../images/bananas.png);
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    
+   
+}
+
+p {
+    color: #2f4c5c;
+}
+
+h1 {
+    font-size: 80px;
+    color: #3747b3;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 35px;
+    color: rgb(142, 113, 211);
+    margin-top: 0px;
+}
+
+.highlight {
+    color: rgb(245, 236, 115);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.accent-color {
+    color: red;
+}
+
+#top-section {
+    background-color: pink;
+    
+}
+
+#mid-section {
+    background-color: greenyellow;
+    
+}
+
+.bottom-section {
+    background-color: greenyellow;
+    
+}
+
+.intro {
+    font-size: 25px;
+    font-family: Arial;
+}
+
+/* Css comment, it is different than the html one that has the < and the -- and the ! */
+
+/* CSS box model */
+
+/* contains:
+    margin: empty space around element 
+    Border: a border around element 
+    Padding: empty space with background around element
+
+    All of these ADD on top of the width and height!
+ */
+
+.box {
+    background-image: url(../images/cat.jpg);
+    margin:100px;
+    padding: 300px;
+    background-size: cover;
+    background-position: center
+    ;
+}
+
+.body-text {
+    background-color: rgb(138, 185, 181);
+    padding: 50px;
+}
+
+.body-text p {
+    color: rgb(255, 255, 255);
+}
+
+.body-text a {
+    color: bisque;
+}
+
+.body-text a:hover {
+    color:cadetblue
+}
+
+/* .important-link {
+  color:rgb(245, 236, 115)  
+} 
+
+The code above won't work as intended because there is an order of importance in css or html. if we go to a websitre called "Specificity calculator" it will show an order of importance with some numbers for example a code worth 11 points will win and overrun a code worth 10 points. so now becuase our .body-text a is worth 11 points it will override our .important-link class, so it make up for this we need to strengthen our important text by adding SPECIFICITY to it as seen below. This allows us to say to html "listen our important-link inside oour body-text should also have the important-link done to it. so what we are doing is specifiying, we are telling our browser to run important link, it does that just fine but because after that links have the attribute of body-text a it runs bodytext to even the important-link inside it because it is overruinning it, what we should do next is to tell it look, inside our body-text run body-text a then run important-link, so imprtant-link is overun by body-text then body-text is again overrun by important-link. Or as Powell says it works because it is 2 different classes, .body-text a is worth 11 points, but .body-text .important-link is worth 20 points, and 20 is more than 11 so it wins.
+*/
+
+.important-link,
+.body-text .important-link {
+    color:rgb(245, 236, 115)
+}
+
+/* there is a selector called "!important" this allows you to make the thing you want to ovveride all things ovverride all things but it is more of a last ditch option. Imagine you have to add a lot of class specificity this could come in handy if you are lazy but you must be careful as you may run into problems if you select 2 atttributes that are similar in how they function as !important. In our example it will look like this:
+
+.important-link{
+    color:rgb(245, 236, 115 !important;)
+}
+*/
+
+.side-note {
+    font-size: 10px;
+}
+
+ol {
+    list-style-type: lower-alpha;
+    padding-left:50px;
+    padding-top:0px;
+    background-color: pink;
+    padding: 50px;
+    list-style-position: inside;
+}
+
+ol li {
+    background: rgb(226, 113, 113);
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-image: url(../images/heart-icon.png);
+    padding-left:50px;
+    padding-top:0px;
+    background-color: pink;
+    padding: 50px;
+    list-style-position: inside;
+}
+
+ul li {
+    background: rgb(183, 81, 81);
+    margin-bottom: 15px;
+}
+.tiny {
+    list-style-image: url(../images/tiny-icon.png);
+    background: rgb(97, 223, 206);
+    list-style-position: inside;
+    
+}
+
+.tiny li {
+    background: rgb(68, 192, 126);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+div {
+    clear: both;}
+
+.red-box {
+    width: 500px;
+    background:rgb(245, 80, 54);
+    color:white;
+}
+
+.blue-box {
+    width: 500px;
+    background:#0cf;
+}
+
+img {
+    max-width: 100%;
+}
+
+.boxx {
+    width: 100px;
+    height: 100px;    
+}
+.box1 {
+    background: rgba(45, 60, 223, 0.776);
+}
+
+.box2 {
+    background: rgb(137, 147, 49);
+}
+
+.box3 {
+    background: hsla(82, 41%, 48%, 0.799);
+}
+
+.container {
+    background: whitesmoke;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1000px;
+    min-width: 700px;
+}
