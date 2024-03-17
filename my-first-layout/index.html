@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Binkl">
+    <title>My First Layout!</title>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>My First actual website</h1>
+    </header>
+<div class="container">
+
+    <section>
+        <h1>This is the main content area of this page</h1>
+        <p>You can use the object-fit CSS property on the img element to specify how the image should be resized & cropped to fit the container. Before this CSS property was introduced, we had to resort to using a background image.
+
+Along with inherit, initial, and unset, there are 5 more possible values for object-fit:
+
+contain: It preserves the original aspect ratio of the image, but the image is resized so that it is fully visible. The longest of either the height or width will fit in the given dimensions, regardless of the size of the containing box.
+cover: It preserves the original aspect ratio but resizes the image to cover the entire container, even if it has to upscale the image or crop it.
+fill: This is the default value. The image will fill its given area, even if it means losing its aspect ratio.
+none: The image is not resized at all, and the original image size fills the given area.
+scale-down: The smaller of either contain or none.
+You can use object-position to control the starting position of the image in case a cropped part of the image is being rendered.</p>
+        <p>Since the full-sized image is loaded anyway before resizing happens in the browser, it takes more time to finish downloading and finally rendering. This means that if you have a large, 1.5 megabyte, 1024×682 photograph that you are displaying at 400px in width, the whole 1.5-megabyte image is downloaded by the visitor before the browser resizes it down to 400px.
+
+            You can see this download time on the network panel, as shown in the screenshot below.</p>
+    </section>
+    <aside>
+        <h2>This is the side bar</h2>
+        <ol>
+            <li>List item one</li>
+            <li>List item one</li>
+            <li>List item one</li>
+            <li>List item one</li>
+
+        </ol>
+    </aside>
+
+</div>
+
+
+
+<footer>
+<p>Nice simple paragraph</p>
+</footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

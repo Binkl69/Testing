@@ -1,2 +1,0 @@
-# Powell
-This is the Powell readme and we told linux us he should carry with this, we'll push to local there and edit the rest there, a note for me (Push) when you git everything worki9ng in the hub to local machines from now on.
